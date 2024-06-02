@@ -2,6 +2,8 @@ FROM node:17-alpine3.14
 
 LABEL maintainer="Gabriel Moya"
 
+VOLUME [ "/var/nodeapp" ]
+
 RUN adduser -h /var/nodeapp -s /bin/bash -D nodeapp
 
 WORKDIR /var/node
