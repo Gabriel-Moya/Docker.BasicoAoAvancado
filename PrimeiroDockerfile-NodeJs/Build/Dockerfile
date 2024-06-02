@@ -17,4 +17,5 @@ ARG VERSION
 ENV VERSION=${VERSION:-1.0.0}
 
 USER nodeapp
-CMD ["node", "app.js"]
+ENTRYPOINT [ "node" ]
+CMD [ "app.js" ]
